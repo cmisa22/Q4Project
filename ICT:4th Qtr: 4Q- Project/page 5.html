@@ -116,7 +116,10 @@
     -webkit-border-radius: 25px 25px 25px 25px;
     -moz-border-radius: 25px 25px 25px 25px;
 
+   }
 
+   #search {
+     background-color: pink !important;
    }
 
   </style>
@@ -146,7 +149,7 @@
         </ul>
         <form class="d-flex ms-auto p-3">
           <input class="form-control" type="text" placeholder="Search">
-          <button class="btn btn-secondary" type="button">Search</button>
+          <button class="btn" type="button" id="search">Search</button>
         </form>
        </div>
 
@@ -163,12 +166,22 @@
           <img src="back.png" id="back" alt="back button" width="50px">
         </div>
 
+      <form>
         <div class="comment-box">
+          <div>
           <textarea id="area" placeholder="Enter your comments/suggestions here!"></textarea>
-          <button id="submit">Submit</button>
+          </div>
+
+          <div>
+          <button type="button" id="submit">Submit</button>
           <button id="cancel"> Cancel </button>
           <p id="thankyou"> </p>
+          </div>
+
+          <!-- <p id="thankyou"> </p> -->
         </div>
+      </form>
+
 
         <!-- BOTTOM NAV -->
 
